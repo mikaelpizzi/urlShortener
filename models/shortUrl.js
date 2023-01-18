@@ -3,16 +3,16 @@ const shortId = require("shortid");
 
 const shortUrlSchema = new mongoose.Schema({
   full: {
-    type: string,
+    type: String,
     required: true,
   },
   short: {
-    type: string,
+    type: String,
     required: true,
     default: shortId.generate,
   },
   clicks: {
-    type: string,
+    type: String,
     required: true,
     default: 0,
   },
